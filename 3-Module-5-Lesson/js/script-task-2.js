@@ -12,10 +12,12 @@ const salaries = {
 let sum = 0;
 
 for (const value of Object.values(salaries)) {
+
   sum += value;
 }
-
 console.log(sum);
 
 // const entries = Object.entries(salaries);
 // console.log(entries[1][1]);
+
+

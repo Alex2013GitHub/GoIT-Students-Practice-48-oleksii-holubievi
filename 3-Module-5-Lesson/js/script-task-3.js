@@ -10,14 +10,13 @@ const stones = [
   { name: 'Щебень', price: 200, quantity: 2 },
 ];
 
-function calcTotalPrice(stones, stoneName) {
-  for (const stone of stones) {
-    if (stone.name === stoneName) {
+function calcTotalPrice(stones, stoneName){
+  for(const stone of stones){
+    if(stone.name === stoneName){
       return stone.price * stone.quantity;
     }
   }
-
   return 0;
 }
+console.log(calcTotalPrice(stones, 'Изумруд'));
 
-console.log(calcTotalPrice(stones, 'fwefew'));

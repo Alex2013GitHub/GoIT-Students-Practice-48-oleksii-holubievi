@@ -12,18 +12,20 @@ const user = {
 };
 
 user.mood = 'happy';
-
 user.hobby = 'skydiving';
 
 user.premium = !user.premium;
 
-// for (const name in user) {
+// for(const name in user){
 //   console.log(`${name}: ${user[name]}`);
 // }
 
-for (const name of Object.keys(user)) {
-  user[name] = user[name] + '----';
-  console.log(`${name}: ${user[name]}`);
+for(const name of Object.keys(user)){
+  user[name] = user[name] + '-----'
+
+console.log(`${name}: ${user[name]}`);
+
 }
 
 console.log(user);
+

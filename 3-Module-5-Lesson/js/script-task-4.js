@@ -32,8 +32,8 @@ const account = {
     return {
       id: this._currentId++,
       amount,
-      type,
-    };
+      type
+    }
   },
 
   /*
@@ -59,13 +59,11 @@ const account = {
    * про те, що зняття такої суми не можливе, недостатньо коштів.
    */
   withdraw(amount) {
-    if (amount > this.balance) {
+    if(amount > this.balance){
       console.log('no money no honey');
       return;
     }
-
     const transaction = this.createTransaction(amount, Transaction.WITHDRAW);
-    this.transactions.push(transaction);
     this.balance -= amount;
     return transaction;
   },
@@ -82,7 +80,7 @@ const account = {
    */
   getTransactionDetails(id) {
     for (const transaction of this.transactions) {
-      if (transaction.id === id) {
+      if(transaction.id === id){
         return transaction;
       }
     }
@@ -106,11 +104,11 @@ const account = {
 
 console.log(account.deposit(100));
 console.log(account.deposit(200));
+
 console.log(account.withdraw(100));
 console.log(account.withdraw(300));
 
-console.log(account.getBalance());
-
+console.log(account.getBalance);
 console.log(account.getTransactionDetails(1));
 console.log(account.getTransactionDetails(100));
 console.log(account.getTransactionTotal(Transaction.DEPOSIT));
