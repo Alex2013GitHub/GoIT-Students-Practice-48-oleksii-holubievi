@@ -7,10 +7,19 @@ const stonesObject = {
 
 console.log(calcTotalPrice(stonesObject, 'emerald')); // 5200
 
-function calcTotalPrice(stones, stoneName) {
+function calcTotalPrice (stones, stoneName){
   // if (stones[stoneName]) {
-  if (stoneName in stones) {
+  if(stoneName in stones ){
     return stones[stoneName].price * stones[stoneName].quantity;
   }
   return 'no such stones';
 }
+
+
+// function calcTotalPrice(stones, stoneName) {
+//   // if (stones[stoneName]) {
+//   if (stoneName in stones) {
+//     return stones[stoneName].price * stones[stoneName].quantity;
+//   }
+//   return 'no such stones';
+// }

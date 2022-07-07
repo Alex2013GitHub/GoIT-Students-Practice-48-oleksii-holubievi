@@ -1,11 +1,23 @@
-function transformUsername({ firstName, lastName, ...otherProps }) {
+
+function transformUsername(firstName, lastName, ...otherProps){
   return {
     userName: `${firstName} ${lastName}`,
     lastName,
     firstName,
     ...otherProps,
+
   };
 }
+
+
+// function transformUsername({ firstName, lastName, ...otherProps }) {
+//   return {
+//     userName: `${firstName} ${lastName}`,
+//     lastName,
+//     firstName,
+//     ...otherProps,
+//   };
+// }
 
 console.log(
   transformUsername({

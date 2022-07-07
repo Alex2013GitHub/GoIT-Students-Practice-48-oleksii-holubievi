@@ -7,11 +7,12 @@ console.log(
   }),
 );
 
-function findAllMethods(obj) {
+function findAllMethods(obj){
   const result = [];
-  for (const key of Object.keys(obj)) {
-    if (typeof obj[key] === 'function') {
+  for (const key of Object.keys(obj)){
+    if(typeof obj[key] === 'function'){
       result.push(key);
+
     }
   }
   return result;
