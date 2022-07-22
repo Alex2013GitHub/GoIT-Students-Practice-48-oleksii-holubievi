@@ -6,14 +6,14 @@
 // logProduct(product) - коллбек, що приймає об'єкт продукту і логіює його в консоль
 // logTotalPrice(product) - коллбек, що приймає об'єкт продукту і логіює загальну вартість товару в консоль
 
+
 function createProduct(obj, callback) {
   const product = {
-    ...obj,
+    ... obj, 
     id: Date.now(),
   };
   callback(product);
 }
-
 function logProduct(product) {
   console.log(product);
 }
