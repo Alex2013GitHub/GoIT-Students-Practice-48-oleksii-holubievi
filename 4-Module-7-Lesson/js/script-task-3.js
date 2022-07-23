@@ -3,9 +3,13 @@
 // масиву. Функція each повинна повернути новий масив,
 // Елементами якого будуть результати виклику коллбека.
 
+// function each(array, callback) {
+
+
+
 function each(array, callback) {
   const newArr = [];
-  for (const el of array) {
+  for(const el of array) {
     newArr.push(callback(el));
   }
   return newArr;

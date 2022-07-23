@@ -10,8 +10,10 @@ function calсulateAverage(...args) {
   // for (let i = 0; i < args.length; i++) {
   //   total += args[i];
   // }
-  args.forEach(el => (total += el));
-  return total / args.length;
+
+  args.forEach((el) => (total += el));
+  return total / args.length; 
+ 
 }
 
 console.log(calсulateAverage(1, 2, 3, 4)); // 2.5
