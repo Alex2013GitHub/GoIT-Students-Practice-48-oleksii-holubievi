@@ -86,4 +86,5 @@ const cars = [
 
 const getModels = cars => cars.map(el => el.model);
 
-console.table(getModels(cars));
+console.table(getModels(cars))
+

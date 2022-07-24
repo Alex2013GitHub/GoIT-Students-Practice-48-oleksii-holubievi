@@ -84,15 +84,25 @@ const cars = [
   },
 ];
 
-const makeCarsWithDiscount = (cars, discount) =>
-  cars.map(el => ({
-    ...el,
-    price: el.price * (1 - discount),
-  }));
+// const makeCarsWithDiscount = (cars, discount) =>
+//   cars.map(el => ({
+//     ...el,
+//     price: el.price * (1 - discount),
+//   }));
 // cars.map(el => {
 //   el.price = el.price * (1 - discount);
 //   return el;
 // });
+
+const makeCarsWithDiscount = (cars, discount) =>
+ cars.map(el => ({
+  ...el,
+  price: el.price * (1-discount)
+}));
+// cars.map(el => {
+//   el.price = el.price * (1-discount);
+//   return el;
+// })
 
 console.table(makeCarsWithDiscount(cars, 0.2));
 console.log(cars);
