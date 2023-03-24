@@ -8,20 +8,31 @@
 
 // Індекс маси тіла необхідно округлити до однієї цифри після коми;
 
-function calcBMI(weight, height){
+// function calcBMI(weight, height){
+//   weight = parseNumber(weight);
+//   height = parseNumber(height);
+//   return (weight / height ** 2).toFixed(1);
+
+// }
+
+// function parseNumber(str){
+//   str = str.replace(',', '.');
+//   return parseInt(str)
+// }
+
+// const bmi = calcBMI('90.3', '1,75');
+// console.log(bmi); // 28.8
+
+function calcBMI(weight, height) {
   weight = parseNumber(weight);
   height = parseNumber(height);
   return (weight / height ** 2).toFixed(1);
-
 }
-
-function parseNumber(str){
+function parseNumber(str) {
   str = str.replace(',', '.');
-  return parseInt(str)
+  return parseFloat(str);
 }
 
 const bmi = calcBMI('90.3', '1,75');
-console.log(bmi); // 28.8
-
-
+console.log(bmi);
  
