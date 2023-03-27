@@ -17,30 +17,31 @@ removeCourse('Vue'); // 'Курс с таким имененем не найде
 updateCourse('Express', 'NestJS');
 console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
 
-function addCourse(course){
+function addCourse(course) {
   const courseIndex = courses.indexOf(course);
-  if(courseIndex > -1){
+  if (courseIndex > -1) {
     console.log(`course exists`);
-  }else {
+  } else {
     courses.push(course);
   }
-  
+
 }
 
-function removeCourse(course){
+function removeCourse(course) {
   const courseIndex = courses.indexOf(course);
-  if(courseIndex > -1){
+  if (courseIndex > -1) {
     courses.splice(courseIndex, 1)
-  }else {
+  } else {
     console.log(`course do not found`);
   }
 }
 
-function updateCourse(courseOld, courseNew){
+function updateCourse(courseOld, courseNew) {
   const courseIndex = courses.indexOf(courseOld);
-  if(courseIndex > -1){
+  if (courseIndex > -1) {
     courses[courseIndex] = courseNew
-  }else {
+  } else {
     console.log(`course do not found`);
   }
 }
+
