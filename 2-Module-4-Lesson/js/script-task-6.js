@@ -18,6 +18,14 @@ function findLargestNumber(numbers) {
 
 
 
-console.log(findLargestNumber([2, 17, 94, 1, 23, 37])); // 94
-console.log(findLargestNumber([49, 4, 7, 83, 12])); // 83
-console.log(findLargestNumber([]));
+// console.log(findLargestNumber([2, 17, 94, 1, 23, 37])); // 94
+// console.log(findLargestNumber([49, 4, 7, 83, 12])); // 83
+// console.log(findLargestNumber([]));
+
+
+function includes(array, value) {
+return array.includes(value)
+}
+
+includes([1, 2, 3, 4, 5], 17) 
+ 

@@ -1,4 +1,4 @@
-//Нехай функція getModels повертає масив моделей (поле model) всіх
+ //Нехай функція getModels повертає масив моделей (поле model) всіх
 //автомобілів.
 
 const cars = [
@@ -16,7 +16,7 @@ const cars = [
     type: 'sedan',
     amount: 2,
     price: 22455,
-    onSale: true,
+    onSale: true, 
   },
   {
     make: 'Mazda',
