@@ -8,10 +8,21 @@
  * Виведіть результат у консоль
  */
 
+// const counter = function () {
+//   return (this.i += 1);
+// };
+
+// const conter1 = counter.bind({ i: 0 });
+// conter1();
+// console.log(conter1());
+
+
 const counter = function () {
-  return (this.i += 1);
+  return this.i += 1;
 };
 
-const conter1 = counter.bind({ i: 0 });
-conter1();
-console.log(conter1());
+const counter1 = counter.bind({ i: 0 });
+counter1();
+console.log(counter1());
+
+

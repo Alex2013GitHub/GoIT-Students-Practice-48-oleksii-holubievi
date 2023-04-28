@@ -4,7 +4,21 @@
  * Вивести результат обох getName в консоль
  */
 
-'use strict';
+// 'use strict';
+
+// const person1 = {
+//   name: 'person1',
+//   getName() {
+//     return this.name;
+//   },
+// };
+
+// const person2 = {
+//   name: 'person2',
+// };
+
+// person2.getName = person1.getName;
+
 
 const person1 = {
   name: 'person1',

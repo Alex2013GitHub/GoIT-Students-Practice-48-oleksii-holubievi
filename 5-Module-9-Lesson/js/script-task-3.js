@@ -4,6 +4,20 @@
 // add() - повертає суму збережених значень.
 // mult() - перемножує збережені значення та повертає результат.
 
+// const calculator = {
+//   read(a, b) {
+//     this.a = a;
+//     this.b = b;
+//   },
+//   add() {
+//     return this.a + this.b;
+//   },
+//   mult() {
+//     return this.a * this.b;
+//   },
+// };
+
+
 const calculator = {
   read(a, b) {
     this.a = a;
