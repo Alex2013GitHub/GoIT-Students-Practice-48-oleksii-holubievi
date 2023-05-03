@@ -3,33 +3,61 @@
 // #login та #email, доступ до яких зроби через геттер та сеттер login та email.
 
 
-class Client{
+// class Client{
+//   #login;
+//   #email;
+
+//   constructor (email){
+//     this.#email = email;
+//   }
+
+
+//   get login(){
+//     return this.#login;
+//   }
+
+//   set login(value){
+//     this.#login = value;
+//   }
+
+//   get email(){
+//     return this.#email;
+//   }
+
+ 
+// }
+// const client = new Client('some@gmail.com');
+// client.email = 'dwwdwd';
+// console.log(client.email);
+
+// client.login = 'someLogin';
+// console.log(client.login);
+
+class Client {
   #login;
   #email;
 
-  constructor (email){
+  constructor(email) {
     this.#email = email;
   }
 
-
-  get login(){
+  get login() {
     return this.#login;
   }
 
-  set login(value){
+  set login(value) {
     this.#login = value;
   }
 
-  get email(){
+  get email() {
     return this.#email;
   }
-
- 
+  
 }
+
 const client = new Client('some@gmail.com');
 client.email = 'dwwdwd';
 console.log(client.email);
 
 client.login = 'someLogin';
 console.log(client.login);
-

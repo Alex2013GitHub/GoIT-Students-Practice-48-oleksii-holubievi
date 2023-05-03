@@ -4,20 +4,78 @@
 
 // Додай методи addNote(note), removeNote(text) и updatePriority(text, newPriority).
 
+// class Note {
+//   static Priority = {
+//     LOW: 1,
+//     NORMAL: 2,
+//     HIGH: 3,
+//   };
+
+//   constructor(text, priority) {
+//     this.text = text;
+//     this.priority = priority;
+//   }
+// }
+
+
+
+// const firstNote = new Note('make a picture', Note.Priority.LOW);
+// const secondNote = new Note('open web site', Note.Priority.HIGH);
+// const thirdNote = new Note('do home tasks', Note.Priority.NORMAL);
+
+// class Notes {
+//   #notes = [];
+
+//   addNote(note){
+//     this.#notes.push(note);
+//   }
+//   removeNote(text) {
+//     const index = this.#notes.findIndex(n => n.text === text);
+//     if (index > -1) {
+//       this.#notes.splice(index, 1);
+//     }
+//   }
+//   updatePriority(text, priority) {
+//     const index = this.#notes.findIndex(n => n.text === text);
+//     if (index > -1) {
+//       this.#notes[index].priority = priority;
+//     }
+//   }
+
+//   get notes(){
+//     return this.#notes;
+//   }
+// }
+
+
+
+
+// const myNotes = new Notes();
+
+// myNotes.addNote(firstNote);
+// myNotes.addNote(secondNote);
+// myNotes.addNote(thirdNote);
+
+// console.table(myNotes.notes);
+
+// myNotes.removeNote('open web site');
+
+// console.table(myNotes.notes);
+// myNotes.updatePriority('do home tasks', 3);
+
+// console.table(myNotes.notes);
+
 class Note {
   static Priority = {
     LOW: 1,
     NORMAL: 2,
-    HIGH: 3,
-  };
-
+    HIGH: 3
+  }
   constructor(text, priority) {
     this.text = text;
     this.priority = priority;
   }
 }
-
-
 
 const firstNote = new Note('make a picture', Note.Priority.LOW);
 const secondNote = new Note('open web site', Note.Priority.HIGH);
@@ -26,11 +84,11 @@ const thirdNote = new Note('do home tasks', Note.Priority.NORMAL);
 class Notes {
   #notes = [];
 
-  addNote(note){
+  addNote(note) {
     this.#notes.push(note);
   }
-  removeNote(text) {
-    const index = this.#notes.findIndex(n => n.text === text);
+  removeNote(note) {
+    const index = this.#notes.findIndex(n => n.text === note.text);
     if (index > -1) {
       this.#notes.splice(index, 1);
     }
@@ -41,14 +99,10 @@ class Notes {
       this.#notes[index].priority = priority;
     }
   }
-
-  get notes(){
+  get notes() {
     return this.#notes;
   }
 }
-
-
-
 
 const myNotes = new Notes();
 
@@ -56,11 +110,11 @@ myNotes.addNote(firstNote);
 myNotes.addNote(secondNote);
 myNotes.addNote(thirdNote);
 
-console.table(myNotes.notes);
+console.log(myNotes.notes);
 
 myNotes.removeNote('open web site');
-
+console.log(myNotes.notes);
 console.table(myNotes.notes);
-myNotes.updatePriority('do home tasks', 3);
+myNotes.updatePriority('do home tasks', 1);
 
 console.table(myNotes.notes);
