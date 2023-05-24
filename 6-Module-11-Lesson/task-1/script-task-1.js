@@ -5,6 +5,19 @@
  * 3. Color text in list in red
  */
 
+// const elements = document.querySelectorAll('li');
+// elements.forEach(el => console.log(el.textContent));
+
+// const ul = document.querySelector('ul');
+// const cokeNode = document.createElement('li');
+// // cokeNode.append(document.createTextNode('Coke'));
+// // cokeNode.innerText = 'Coke';
+// cokeNode.textContent = 'Coke';
+// ul.append(cokeNode);
+
+// document.querySelectorAll('li').forEach(el => (el.style.color = 'Red'));
+
+
 const elements = document.querySelectorAll('li');
 elements.forEach(el => console.log(el.textContent));
 
@@ -15,4 +28,4 @@ const cokeNode = document.createElement('li');
 cokeNode.textContent = 'Coke';
 ul.append(cokeNode);
 
-document.querySelectorAll('li').forEach(el => (el.style.color = 'Red'));
+document.querySelectorAll('li').forEach(el => (el.style.color = "red"))
