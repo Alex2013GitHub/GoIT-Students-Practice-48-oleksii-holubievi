@@ -9,6 +9,25 @@ function isEmail(email) {
   return regexEmail.test(email.toLowerCase());
 }
 
+// const inputRef = document.querySelector('#email-input');
+// const errorRef = document.querySelector('#error-text');
+
+// inputRef.addEventListener('keydown', e => {
+//   if (e.code === 'Enter') {
+//     if (isEmail(e.target.value)) {
+//       errorRef.style.display = 'none';
+//     } else {
+//       errorRef.style.display = 'block';
+//     }
+//   }
+// });
+
+// window.onbeforeunload = function () {
+//   return 'Are you sure?';
+// };
+
+// ============================
+
 const inputRef = document.querySelector('#email-input');
 const errorRef = document.querySelector('#error-text');
 
