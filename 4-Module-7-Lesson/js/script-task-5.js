@@ -39,11 +39,9 @@ const account = {
   },
 };
 
-const handleSuccess = (message) => console.log(`Success ${message}`);
+const handleSuccess = message => console.log(`Success ${message}`);
 
-const handleError = (message) => console.log(`Error ${message}`);
-
-
+const handleError = message => console.log(`Error ${message}`);
 
 account.withdraw(2000, handleSuccess, handleError);
 account.withdraw(600, handleSuccess, handleError);
